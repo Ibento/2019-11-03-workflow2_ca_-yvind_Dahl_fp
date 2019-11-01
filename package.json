@@ -1,0 +1,30 @@
+{
+  "name": "recycle",
+  "version": "1.0.0",
+  "description": "A website for ReCycle tours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibento/2019-11-03-workflow2_ca_-yvind_Dahl_fp.git"
+  },
+  "author": "Øyvind Dahl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ibento/2019-11-03-workflow2_ca_-yvind_Dahl_fp/issues"
+  },
+  "homepage": "https://github.com/Ibento/2019-11-03-workflow2_ca_-yvind_Dahl_fp#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {}
+}
