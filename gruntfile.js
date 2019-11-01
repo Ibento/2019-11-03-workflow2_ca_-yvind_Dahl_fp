@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             }
         },
 
-        imagemin: {
+        imagemin: {      
             dynamic: {
                 files: [{
                     expand: true,
@@ -43,17 +43,28 @@ module.exports = function(grunt) {
 
         // config watch
         watch: {
-            stylesheets: { 
-                // watch for changes in stylesheets and run less and cssmin on change
-                files: ['app//*.css', 'app//*.less'], 
-                tasks: ['less', 'cssmin'] 
-            }, 
-            // watch for changes in images directory
-            images: { 
-                files: 'app/images/*', tasks: ['imagemin'] 
-            } 
-          }
-          
+            options: {
+              livereload: true,
+            },
+            html: {
+                files: '{./dist/*.html}'
+            },
+            less: {
+                files: '{./app/less/*.less}',
+                tasks: ['less', 'cssmin']
+ 
+
+            },
+            images: {
+                files: '{./app/images/*.*}',
+                tasks: ['imagemin']
+
+            },
+
+            gruntchanges: {
+                files: './gruntfile.js'
+            }
+        }
 
     });
 
